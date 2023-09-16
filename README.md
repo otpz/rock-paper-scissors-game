@@ -1,3 +1,5 @@
+## Live Site URL -> https://otpz.github.io/rock-paper-scissors-game/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
