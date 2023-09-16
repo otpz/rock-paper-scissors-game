@@ -1,0 +1,10 @@
+.container {
+    margin-top: 3.75rem;
+    width: 31.25rem;
+    height: 25rem;
+    background-image: url('../../assets/images/bg-triangle.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+}   
