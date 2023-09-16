@@ -1,5 +1,8 @@
 ## Live Site URL -> https://otpz.github.io/rock-paper-scissors-game/
 
+If you find the secret cheat mode, you are lucky :D
+![React App](https://github.com/otpz/rock-paper-scissors-game/assets/109739566/c50badb3-aca3-4db7-855e-a01817dd346d)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
