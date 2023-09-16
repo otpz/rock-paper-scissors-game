@@ -12,7 +12,7 @@ import { useGameContext } from '../../context/GameContext'
 import styles from './styles.module.css'
 
 export default function Result() {
-    const {selectedMove, setIsGameVisible, setScore} = useGameContext()
+    const {selectedMove, setIsGameVisible, setScore, iconToggleMode} = useGameContext()
 
     const [selectedMoveComponent, setSelectedMoveComponent] = useState("")
     const [selectedRandomMoveComponent, setSelectedRandomMoveComponent] = useState("")
@@ -59,7 +59,18 @@ export default function Result() {
     }, [win])
 
     const selectRandomMove = () => {
-        const random = Math.floor(Math.random() * 3);
+        let random = 0
+        if (iconToggleMode){
+            if (selectedMove === "rock"){
+                random = 2
+            } else if (selectedMove === "paper"){
+                random = 0
+            } else {
+                random = 1
+            }
+        } else {
+            random = Math.floor(Math.random() * 3);
+        }
 
         if (random === 0){ // rock
             setSelectedRandomMoveComponent(<Rock className={styles.selected}/>)

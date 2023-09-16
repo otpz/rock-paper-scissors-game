@@ -22,15 +22,78 @@
     letter-spacing: 1px;
     transition: ease all 0.1s;
 }
+
 button:hover{
     color: rgba(20,21,57,1);
     background-color: white;
     transition: ease all 0.1s;
 }
+
 .footer{
     color: rgb(210, 210, 210);
 }
+
 .footer a {
     color: white;
     text-decoration: none;
 }
+
+.cheat{
+    position: absolute;
+    top: calc(60px);
+    right: calc(20px);
+    width: 12.5rem;
+    height: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: ease-in-out all 0.2s;
+    border-radius: .625rem;
+}
+
+.cheat:hover{
+    border: 1px solid white;
+    transition: ease-in-out all 0.2s;
+}
+
+.cheatTitle{
+    color: rgba(255, 255, 255, 0.3);
+    width: 10rem;
+    text-align: start;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: ease-in-out all 0.2s;
+}
+
+.cheat:hover .cheatTitle{
+    color: rgba(255, 255, 255, 1);
+    transition: ease-in-out all 0.2s;
+}
+.cheatTitle span {
+    margin-left: .9375rem;
+}
+
+.cheatButton,
+.cheatButton:hover{
+    width: 2.5rem;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.cheatButton .buttonIcon {
+    width: inherit;
+    height: inherit;
+    color: gray;
+    transition: ease-in-out all 0.2s;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.cheat:hover .cheatButton .buttonIcon{
+    color: rgba(255, 255, 255, 1);
+    transition: ease-in-out all 0.2s;
+}
+
+
