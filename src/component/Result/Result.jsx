@@ -97,8 +97,11 @@ export default function Result() {
 
     return (
         <div className={styles.container}>
-            <div className={`${styles.house} ${win === true ? styles.winnerStyle : null}`}>
-                {selectedMoveComponent}
+            <div className={styles.houseDiv}>
+                <span>You Picked</span>
+                <div className={`${styles.house} ${win === true ? styles.winnerStyle : null}`}>
+                    {selectedMoveComponent}
+                </div>
             </div>
             {
                 countDown === 0 ?
@@ -108,8 +111,11 @@ export default function Result() {
                 </div> :
                 null
             }
-            <div className={`${styles.house} ${win === false ? styles.winnerStyle : null}`}>
-                {countDown !== 0 ? <p className={styles.countDown}>{countDown}</p> : selectedRandomMoveComponent}
+            <div className={styles.houseDiv}>
+                <span>The House Picked</span>
+                <div className={`${styles.house} ${win === false ? styles.winnerStyle : null}`}>
+                    {countDown !== 0 ? <p className={styles.countDown}>{countDown}</p> : selectedRandomMoveComponent}
+                </div>
             </div>
         </div>
     )

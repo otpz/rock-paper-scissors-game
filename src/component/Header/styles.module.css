@@ -42,3 +42,15 @@
     color: #3B4363;
     font-weight: 700;
 }
+
+@media screen and (max-width:1110px) {
+    .container{
+      max-width:  31.25rem;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .container{
+      max-width:  21.25rem;
+    }
+}

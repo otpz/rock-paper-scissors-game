@@ -20,3 +20,12 @@
     transform: scale(1.1);
     transition: ease-in-out all 0.2s
 }
+
+@media screen and (max-width:600px) {
+    .container{
+        width: 6.875rem;
+        height: 6.875rem;
+        bottom: 3.4375rem;
+        left: 150px
+    }
+}
