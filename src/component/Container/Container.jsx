@@ -41,7 +41,7 @@ const Container = () => {
           />
         )}
         {isGameVisible && <button onClick={openInfoModal} className={styles.button}>Rules</button>}
-        {isGameVisible && <footer className={styles.footer}>This website created by <a  rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/osman-topuz-988104218/">Osman Topuz</a> | Frontend Mentor Challange</footer>}
+        {isGameVisible && <footer className={styles.footer}>This website created by <a target="_blank" href="https://www.linkedin.com/in/osman-topuz-988104218/">Osman Topuz</a> | Frontend Mentor Challange</footer>}
     </div>
   )
 }
