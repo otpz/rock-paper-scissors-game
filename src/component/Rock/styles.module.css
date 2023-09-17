@@ -26,6 +26,10 @@
         width: 6.875rem;
         height: 6.875rem;
         bottom: 3.4375rem;
-        left: 150px
+        left: 150px;
+        border: .75rem solid #DC2E4E;
+        -webkit-box-shadow: inset 0 3px 4px gray, 0 5px #a11b34;
+        -moz-box-shadow: inset 0 3px 4px gray, 0 5px #a11b34;
+        box-shadow: inset 0 3px 4px gray, 0 5px #a11b34;
     }
 }

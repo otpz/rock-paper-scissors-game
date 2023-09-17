@@ -30,7 +30,7 @@
 
 .selected:hover{
     transform: scale(1.7);  
-}
+}   
 
 .house{
     background-color: rgba(0, 0, 0, 0.237);
@@ -143,5 +143,8 @@
         color: white;
         font-size: 1rem;
     }
+    .selected:hover{
+        transform: scale(1);  
+    }   
 
 }

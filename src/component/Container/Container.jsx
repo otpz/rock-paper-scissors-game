@@ -49,16 +49,18 @@ const Container = () => {
           />
         )}
         {isGameVisible && 
-          <div className={styles.cheat}> 
-            <p className={styles.cheatTitle}>Cheat Mode <FontAwesomeIcon icon={faHatCowboy} /> <span>{iconToggleMode === false ? " OFF " : " ON "}</span> </p>
-            <button className={styles.cheatButton} onClick={toggleIcons}>
+          <div className={styles.footerButtons}>
+            <div className={styles.cheat}> 
+              <p className={styles.cheatTitle}>Cheat Mode <FontAwesomeIcon icon={faHatCowboy} /> <span>{iconToggleMode === false ? " OFF " : " ON "}</span> </p>
+              <button className={styles.cheatButton} onClick={toggleIcons}>
               {
                 iconToggleMode === false ? <FontAwesomeIcon className={styles.buttonIcon} icon={faToggleOff} /> : <FontAwesomeIcon className={styles.buttonIcon} icon={faToggleOn} />
               }
-            </button>
+              </button>
+            </div>
+            <button onClick={openInfoModal} className={styles.button}>Rules</button>
           </div>
-        }
-        {isGameVisible && <button onClick={openInfoModal} className={styles.button}>Rules</button>}
+          }
         {isGameVisible && <footer className={styles.footer}>This website created by <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/osman-topuz-988104218/">Osman Topuz</a> | Frontend Mentor Challange</footer>}
     </div>
   )
